@@ -15,7 +15,7 @@ const StoryType = ({ name, Icon, handler, selected }) => (
         }}
         onClick={ () => handler(name.toLowerCase()) }
     >
-        <Icon />
+        { Icon && <Icon /> }
         <span>{ name }</span>
     </div>
 );
