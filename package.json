@@ -9,9 +9,11 @@
         "dev": "next dev",
         "build": "next build",
         "start": "next start",
-        "lint": "eslint --ext .js,.jsx ."
+        "lint": "eslint --ext .js,.jsx .",
+        "test": "jest"
     },
     "dependencies": {
+        "jest": "^26.4.2",
         "next": "^9.5.3",
         "node-fetch": "^2.6.1",
         "react": "^16.13.1",
