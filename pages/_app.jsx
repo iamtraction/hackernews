@@ -30,7 +30,7 @@ export const App = ({ Component, pageProps }) => (
             textAlign: "center",
             padding: 50,
         }}>
-            Made with <RiHeartFill /> by <a href="https://traction.one" target="_blank" style={{ color: "#ff453a" }}>Sankarsan Kampa</a>.
+            Made with <RiHeartFill /> by <a href="https://traction.one" target="_blank" rel="noreferrer" style={{ color: "#ff453a" }}>Sankarsan Kampa</a>.
         </footer>
     </>
 );

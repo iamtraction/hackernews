@@ -19,6 +19,7 @@ const Story = ({ id }) => {
                 id={ id }
                 href={ story.url ? story.url : ("https://news.ycombinator.com/item?id=" + story.id) }
                 target="_blank"
+                rel="noreferrer"
                 style={{
                     padding: 15,
                     display: "flex",
