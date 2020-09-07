@@ -38,7 +38,13 @@ const Story = ({ id }) => {
                     <div>{ story.score }</div>
                 </div>
                 <div>
-                    <div style={{ color: "darkgrey" }}>Posted by { story.by } on { new Date(story.time * 1000).toLocaleString() }</div>
+                    <div style={{
+                        marginBottom: 10,
+                        color: "darkgrey",
+                        fontSize: ".9em",
+                    }}>
+                        Posted by { story.by } on { new Date(story.time * 1000).toLocaleString() }
+                    </div>
 
                     <div>{ story.title }</div>
 
