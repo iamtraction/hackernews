@@ -1,4 +1,5 @@
 import Head from "next/head";
+import { RiHeartFill } from "react-icons/ri";
 
 import "../styles/base.css";
 
@@ -21,6 +22,13 @@ export const App = ({ Component, pageProps }) => (
         }}>
             <Component {...pageProps} />
         </div>
+
+        <footer style={{
+            textAlign: "center",
+            padding: 50,
+        }}>
+            Made with <RiHeartFill /> by <a href="https://traction.one" target="_blank" style={{ color: "#ff453a" }}>Sankarsan Kampa</a>.
+        </footer>
     </>
 );
 
