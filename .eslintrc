@@ -1,0 +1,31 @@
+{
+    "settings": {
+        "react": {
+            "version": "detect"
+        }
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended"
+    ],
+    "env": {
+        "browser": true,
+        "es2020": true,
+        "node": true,
+        "jest": true
+    },
+    "globals": {
+        "React": "writable"
+    },
+    "parserOptions": {
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true
+        }
+    },
+    "rules": {
+        "react/prop-types": 0,
+        "react/react-in-jsx-scope": 0
+    },
+    "ignorePatterns": [ "node_modules/", ".next/" ]
+}
