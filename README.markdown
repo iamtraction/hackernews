@@ -20,6 +20,18 @@ npm run dev
 
 Visit [`localhost:3000`](http://localhost:3000) to see the application.
 
+### Testing
+
+#### Linting
+
+To lint the codebase, run
+
+```bash
+yarn lint
+# or if you're using `npm`
+npm run lint
+```
+
 ### Production Mode
 
 To build the application for production, run:
