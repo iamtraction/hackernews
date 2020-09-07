@@ -1,3 +1,4 @@
+import { BsThreeDots } from "react-icons/bs";
 import { RiFireLine, RiSunLine, RiStarLine } from "react-icons/ri";
 
 import Story from "../components/Story";
@@ -50,7 +51,11 @@ const HomePage = () => {
             <div style={{
                 marginTop: 25,
             }}>
-                { stories.map(id => <Story key={ id } id={ id } />) }
+                {
+                    stories.length
+                    ?   stories.map(id => <Story key={ id } id={ id } />)
+                    :   <div style={{ textAlign: "center" }}><BsThreeDots /></div>
+                }
             </div>
         </div>
     );
