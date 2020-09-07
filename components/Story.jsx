@@ -1,4 +1,4 @@
-import { BiUpvote, BiDownvote } from "react-icons/bi";
+import { BiCommentDetail, BiUpvote, BiDownvote } from "react-icons/bi";
 
 import * as api from "../utils/api";
 
@@ -44,7 +44,10 @@ const Story = ({ id }) => {
 
                     <div style={{
                         display: "flex",
+                        alignItems: "center",
                         marginTop: 10,
+                        fontSize: ".8em",
+                        gap: 20,
                     }}>
                         {
                             story.type && (
@@ -52,11 +55,24 @@ const Story = ({ id }) => {
                                     padding: "2px 5px",
                                     backgroundColor: "rgba(100, 100, 100, .3)",
                                     borderRadius: 5,
-                                    fontSize: ".8em",
+                                    color: "darkgrey",
                                 }}>
                                     { story.type.toUpperCase() }
                                 </div>
                             )
+                        }
+                        {
+                            story.descendants && story.descendants !== 0
+                            ?   <div style={{
+                                    display: "flex",
+                                    alignItems: "center",
+                                    gap: 10,
+                                    color: "darkgrey",
+                                }}>
+                                    <BiCommentDetail />
+                                    <span>{ story.descendants.toLocaleString() } Comments</span>
+                                </div>
+                            :   null
                         }
                     </div>
                 </div>
