@@ -1,0 +1,20 @@
+{
+    "name": "hackernews",
+    "version": "1.0.0",
+    "author": "Sankarsan Kampa <19631364+k3rn31p4nic@users.noreply.github.com>",
+    "repository": "https://github.com/k3rn31p4nic/hackernews.git",
+    "license": "",
+    "private": true,
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start"
+    },
+    "dependencies": {
+        "next": "^9.5.3",
+        "node-fetch": "^2.6.1",
+        "react": "^16.13.1",
+        "react-dom": "^16.13.1",
+        "react-icons": "^3.11.0"
+    }
+}
