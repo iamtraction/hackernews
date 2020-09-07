@@ -28,7 +28,7 @@ const Story = ({ id }) => {
                     marginBottom: 20,
                 }}
             >
-                <div style={{ textAlign: "center" }}>
+                <div style={{ width: 50, textAlign: "center" }}>
                     {
                         story.score >= 0
                         ?   <BiUpvote color="orange" />
