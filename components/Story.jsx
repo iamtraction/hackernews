@@ -39,7 +39,26 @@ const Story = ({ id }) => {
                 </div>
                 <div>
                     <div style={{ color: "darkgrey" }}>Posted by { story.by } on { new Date(story.time * 1000).toLocaleString() }</div>
+
                     <div>{ story.title }</div>
+
+                    <div style={{
+                        display: "flex",
+                        marginTop: 10,
+                    }}>
+                        {
+                            story.type && (
+                                <div style={{
+                                    padding: "2px 5px",
+                                    backgroundColor: "rgba(100, 100, 100, .3)",
+                                    borderRadius: 5,
+                                    fontSize: ".8em",
+                                }}>
+                                    { story.type.toUpperCase() }
+                                </div>
+                            )
+                        }
+                    </div>
                 </div>
             </a>
         :   null
