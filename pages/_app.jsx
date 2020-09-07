@@ -14,6 +14,9 @@ export const App = ({ Component, pageProps }) => (
             />
 
             <meta name="author" content="Sankarsan Kampa" />
+
+            <title>HackerNews</title>
+            <meta name="description" content="A social news website focusing on computer science, entrepreneurship, and anything that gratifies one's intellectual curiosity." />
         </Head>
 
         <div style={{
